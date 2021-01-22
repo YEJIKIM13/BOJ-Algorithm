@@ -1,0 +1,13 @@
+//문제 아이디어: 주어진 수의 변환과정 잘 살펴보기
+//새로운 수 정의하기 
+//시간복잡도, 시간초과 주의하기 
+
+n = int(input())
+count = 0
+new = n
+
+while(new != n or count == 0):
+    count += 1
+    new = int(str(new%10) + str(((new//10)+(new%10))%10))
+
+print(count)
