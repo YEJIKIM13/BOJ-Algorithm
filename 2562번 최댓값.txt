@@ -1,0 +1,11 @@
+import sys
+
+nums = []
+for i in range(9):
+    a = int(sys.stdin.readline())
+    nums.append(a) 
+
+max_num = max(nums)
+index_max_num = nums.index(max_num) + 1
+
+print(f"{max_num}\n{index_max_num}")
