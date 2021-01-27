@@ -14,3 +14,16 @@ for i in range(len(mul_list)):
 
 for i in range(10):
     print(mul_list.count(i))
+
+
+
+# 아래와 같이도 처리 가능
+
+# a = int(sys.stdin.readline())
+# b = int(sys.stdin.readline())
+# c = int(sys.stdin.readline())
+
+# d = list(map(int, (str(a * b * c))))
+
+# for i in range(10):
+#     print(d.count(i))
