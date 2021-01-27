@@ -1,0 +1,16 @@
+# 값들을 어떻게하면 계산하기 좋게 할 수 있을까 고민하기
+# 리스트의 값에서 요소들이 정수형일 때 count 함수 가능하다는 것
+
+import sys
+
+a = int(sys.stdin.readline())
+b = int(sys.stdin.readline())
+c = int(sys.stdin.readline())
+
+mul_list = list(str(a*b*c))
+
+for i in range(len(mul_list)):
+    mul_list[i] = int(mul_list[i])
+
+for i in range(10):
+    print(mul_list.count(i))
