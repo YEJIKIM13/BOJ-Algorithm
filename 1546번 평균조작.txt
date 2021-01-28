@@ -1,0 +1,12 @@
+import sys
+
+n = int(input())
+scores = list(map(int, sys.stdin.readline().split()))
+new_scores = []
+
+for score in scores:
+    new_scores.append(score/max(scores)*100)
+
+new_mean = sum(new_scores, 0.0) / len(new_scores)
+print(new_mean)
+
